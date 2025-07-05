@@ -93,6 +93,7 @@ if (isProduction && cluster.isMaster) {
     app.use('/api/workshops', require('./routes/workshop.routes'));
     app.use('/api/landing', require('./routes/landing.route'));
     app.use('/api/upload', require('./routes/upload.routes'));
+    app.use('/api/users', require('./routes/user.routes'));
 
     // Error handling middleware
     app.use((err, req, res, next) => {
